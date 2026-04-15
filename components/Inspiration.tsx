@@ -1,16 +1,17 @@
 import Image from "next/image";
 
 const inspirations = [
+  // Alex's picks
   {
-    src: "https://images.unsplash.com/photo-1558584673-c834fb1cc3b1?w=800&q=80",
-    alt: "Vinyl record on turntable",
-    caption: "The ritual",
+    src: "https://www.insidehook.com/wp-content/uploads/2023/05/eavesdrop-e1707936765480.jpeg?fit=1200%2C800",
+    alt: "Listening lounge with warm lighting, vinyl collection, and slatted wood paneling",
+    caption: "Golden hour listening",
     span: "row-span-2",
   },
   {
-    src: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&q=80",
-    alt: "Jazz musician performing in intimate setting",
-    caption: "Intimate sessions",
+    src: "https://www.insidehook.com/wp-content/uploads/2024/02/DSC_5634-2.jpg?w=1500",
+    alt: "Tube amplifier and reel-to-reel with vinyl and spirits",
+    caption: "The analog altar",
     span: "",
   },
   {
@@ -20,9 +21,9 @@ const inspirations = [
     span: "",
   },
   {
-    src: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=800&q=80",
-    alt: "Vintage hi-fi speakers",
-    caption: "Sound first",
+    src: "https://venetosecrets.com/wp-content/uploads/2020/06/Venyer-Sommacampagna-Veneto-Secrets.jpg",
+    alt: "Moody cocktail bar with vinyl records, gold speakers, and velvet seating",
+    caption: "Records meet cocktails",
     span: "row-span-2",
   },
   {
@@ -32,39 +33,39 @@ const inspirations = [
     span: "",
   },
   {
+    src: "https://preview.redd.it/home-listening-room-build-v0-rlsphm23e2bc1.jpeg?width=1080&crop=smart&auto=webp&s=7a992a9610e6cf368f81bbdaa6c125c751b9e581",
+    alt: "Walnut-paneled listening room with blue speaker system and vinyl art",
+    caption: "Sound as furniture",
+    span: "",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1558584673-c834fb1cc3b1?w=800&q=80",
+    alt: "Vinyl record on turntable",
+    caption: "The ritual",
+    span: "",
+  },
+  {
+    src: "https://cdn.mos.cms.futurecdn.net/2K9skTnBYxYdJXTTtECyFG.jpg",
+    alt: "Sculptural sunken listening room with curved walls and towering speakers",
+    caption: "The temple",
+    span: "row-span-2",
+  },
+  {
     src: "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=600&q=80",
     alt: "Warm ambient bar interior",
     caption: "Warm materials, warm light",
     span: "",
   },
   {
-    src: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=600&q=80",
-    alt: "Piano keys in soft light",
-    caption: "The space between notes",
-    span: "",
-  },
-  {
     src: "https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800&q=80",
     alt: "Minimalist cafe interior",
-    caption: "Intentional design",
-    span: "row-span-2",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1524578271613-d550eacf6090?w=600&q=80",
-    alt: "Person reading in natural light",
-    caption: "Being present",
+    caption: "Intentional space",
     span: "",
   },
   {
-    src: "https://images.unsplash.com/photo-1460667262436-cf19894f4774?w=600&q=80",
-    alt: "Vinyl record grooves close-up",
-    caption: "Analog warmth",
-    span: "",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1525640788966-69bdb028dd03?w=600&q=80",
-    alt: "Japanese wooden interior",
-    caption: "Kissaten influence",
+    src: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&q=80",
+    alt: "Jazz musician performing in intimate setting",
+    caption: "Intimate sessions",
     span: "",
   },
   {
