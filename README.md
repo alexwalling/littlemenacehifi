@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Little Menace Hi-Fi
 
-## Getting Started
+A modern website for **Little Menace Hi-Fi** — a premium hi-fi listening room and coffee shop coming to Chicago's West Loop.
 
-First, run the development server:
+## About
+
+Little Menace Hi-Fi is being built in three phases:
+1. **Coffee Shop & Listening Room** — Reference-grade hi-fi, specialty coffee, curated vinyl sessions
+2. **Record Store** — Curated new and vintage vinyl
+3. **Speakers & Wine Bar** — Hi-fi gear for home + natural wine + evening listening sessions
+
+## Tech Stack
+
+- [Next.js 14+](https://nextjs.org/) with App Router
+- TypeScript
+- Tailwind CSS
+- Google Fonts: Playfair Display + Inter (via `next/font/google`)
+
+## Pages
+
+- `/` — Homepage: Hero, About, House Rules, The Plan preview, Email signup
+- `/the-plan` — Full project roadmap with all three phases
+
+## Design
+
+Clean, editorial aesthetic. Typography-driven with generous whitespace.
+
+**Color palette:**
+- Cream: `#F5F0EB`
+- Cream Dark: `#EDE6DD`
+- Black: `#1A1A1A`
+- Red/Oxblood: `#8B2500`
+- Red Light: `#A63D1A`
+- Charcoal: `#2C2C2C`
+- Warm Gray: `#6B6560`
+- Warm Gray Light: `#9B9590`
+
+## Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Deployed on [Vercel](https://vercel.com) at [littlemenacehifi.com](https://littlemenacehifi.com).
 
-## Learn More
+## Contact
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[hello@littlemenacehifi.com](mailto:hello@littlemenacehifi.com)  
+[@littlemenacehifi](https://instagram.com/littlemenacehifi) on Instagram
