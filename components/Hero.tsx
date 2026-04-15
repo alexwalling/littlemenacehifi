@@ -5,7 +5,7 @@ export default function Hero() {
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-px h-20 bg-gradient-to-b from-transparent to-warm-gray-light" />
 
       <p className="text-[0.7rem] font-medium tracking-[0.25em] uppercase text-warm-gray mb-8">
-        A listening room for people who give a damn
+        A listening room for people who give a shit
       </p>
 
       <h1 className="font-playfair text-[clamp(3rem,8vw,7rem)] font-normal leading-[1.05] tracking-[-0.02em] text-black mb-2">
@@ -18,7 +18,7 @@ export default function Hero() {
 
       <p className="text-base font-light text-warm-gray max-w-[480px] leading-[1.8]">
         Coffee. Vinyl. Conversation. A place to slow down, listen closely, and
-        be present with good people and great sound.
+        be present with good people and great music.
       </p>
 
       <div className="mt-16 flex flex-col items-center gap-3">
