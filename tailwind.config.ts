@@ -13,8 +13,9 @@ const config: Config = {
         "cream-dark": "#EDE6DD",
         black: "#1A1A1A",
         red: {
-          DEFAULT: "#8B2500",
-          light: "#A63D1A",
+          DEFAULT: "#A93226",
+          light: "#C0392B",
+          dark: "#8B2500",
         },
         charcoal: "#2C2C2C",
         "warm-gray": {
