@@ -13,12 +13,13 @@ export default function About() {
       </h2>
       <p className="text-base font-light leading-[1.9] text-charcoal mb-6">
         Little Menace Hi-Fi started with a simple frustration: there&apos;s
-        nowhere to sit with a great cup of coffee, listen to a record all the
-        way through, and actually be in the room with the people around you.
+        nowhere to sit with a great cup of coffee or tea, listen to music on 
+        a quality sound system, and actually be present in the room with the 
+        people around you.
       </p>
       <p className="text-base font-light leading-[1.9] text-charcoal mb-6">
         Not background music. Not a playlist on shuffle. Real sound, through
-        real speakers, chosen with intention. A place where you walk in, put
+        quality speakers, chosen with intention. A place where you walk in, put
         your phone away, and let the music do what it was made to do.
       </p>
       <p className="text-base font-light leading-[1.9] text-charcoal mb-6">
@@ -28,8 +29,7 @@ export default function About() {
       </p>
       <p className="text-base font-light leading-[1.9] text-charcoal mb-6">
         West Loop felt right. It&apos;s a neighborhood that already gets it.
-        Good food, good design, people who care about craft. We want to add
-        something to that, not copy it.
+        Good food, good design, people who care about craft. 
       </p>
     </section>
   );
