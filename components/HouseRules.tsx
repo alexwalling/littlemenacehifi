@@ -2,7 +2,7 @@ const rules = [
   {
     number: "1",
     title: "Be present.",
-    body: "Put your phone down. You can snap a photo, grab a quick message, whatever. But if you're sat on your phone scrolling, you're missing the point. The music is better than your feed. We promise.",
+    body: "Put your phone down. You can snap a photo, grab a quick message, whatever. But if you're sat on your phone scrolling, you're missing the point. The music and community is better than your feed. We promise.",
   },
   {
     number: "2",
@@ -12,17 +12,17 @@ const rules = [
   {
     number: "3",
     title: "Everyone's a friend.",
-    body: "The person next to you might be a DJ, a teacher, a chef, or someone who just wandered in. Doesn't matter. If you're at Little Menace, you're one of us. Introduce yourself.",
+    body: "The person next to you might be a teacher, a chef, a DJ, or someone who just wandered in. Doesn't matter. If you're at Little Menace, you're one of us. Please feel free to introduce yourself.",
   },
   {
     number: "4",
     title: "Respect the session.",
-    body: "When someone's spinning a set, let it breathe. Save the requests. Save the \"can you play...\" for later. The person at the decks chose those records for a reason. Trust the journey.",
+    body: "When someone's spinning a set, let it breathe. Save the requests. Save the \"can you play...\" for later. The person at the decks chose those records for a reason. Trust the experience.",
   },
   {
     number: "5",
     title: "Leave it better.",
-    body: "This space belongs to all of us. Treat the records, the speakers, the furniture, and each other with care. We're building something here. Help us keep it beautiful.",
+    body: "This space belongs to everyone who comes in. Treat it like your own. Treat the records, the speakers, the furniture, and each other with care. We're building something here. Help us keep it beautiful.",
   },
 ];
 
