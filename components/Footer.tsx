@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="px-12 py-16 flex justify-between items-center border-t border-black/[0.06] max-sm:flex-col max-sm:gap-6 max-sm:text-center">
+    <footer className="px-12 py-16 flex justify-between items-center border-t-2 border-red/30 max-sm:flex-col max-sm:gap-6 max-sm:text-center">
       <span className="font-playfair text-[0.85rem] font-semibold tracking-[0.15em] uppercase">
         Little Menace Hi-Fi
       </span>

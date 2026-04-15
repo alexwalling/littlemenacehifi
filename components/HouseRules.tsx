@@ -6,8 +6,8 @@ const rules = [
   },
   {
     number: "2",
-    title: "No cunts.",
-    body: "Simple. If you can't be decent to the people around you, this isn't your room. We don't care who you are, what you do, or what you listen to. Just don't be an asshole.",
+    title: "No assholes.",
+    body: "Simple. If you can't be decent to the people around you, this isn't your room. We don't care who you are, what you do, or what you listen to. Just be a good human.",
   },
   {
     number: "3",
@@ -32,6 +32,8 @@ export default function HouseRules() {
       id="house-rules"
       className="py-32 px-8 max-w-[800px] mx-auto"
     >
+      {/* Red accent bar */}
+      <div className="w-12 h-1 bg-red mb-10" />
       <p className="text-[0.7rem] font-medium tracking-[0.25em] uppercase text-red mb-8">
         House Rules
       </p>

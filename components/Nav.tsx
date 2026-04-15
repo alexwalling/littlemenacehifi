@@ -7,7 +7,7 @@ export default function Nav() {
   const pathname = usePathname();
 
   return (
-    <nav className="fixed top-0 w-full px-12 py-6 flex justify-between items-center z-50 bg-cream/95 backdrop-blur-md border-b border-black/[0.06]">
+    <nav className="fixed top-0 w-full px-12 py-6 flex justify-between items-center z-50 bg-cream/95 backdrop-blur-md border-b border-red/20">
       <Link
         href="/"
         className="font-playfair text-[1.1rem] font-semibold tracking-[0.15em] uppercase text-black no-underline"

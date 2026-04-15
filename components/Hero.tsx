@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center text-center px-8 pt-32 pb-16 relative">
+    <section className="min-h-screen flex flex-col justify-center items-center text-center px-8 pt-32 pb-16 relative bg-cream">
       {/* Decorative line at bottom */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-px h-20 bg-gradient-to-b from-transparent to-warm-gray-light" />
 
@@ -21,9 +21,12 @@ export default function Hero() {
         be present with good people and great sound.
       </p>
 
-      <p className="mt-16 text-[0.75rem] font-medium tracking-[0.2em] uppercase text-warm-gray-light">
-        Coming soon to West Loop, Chicago
-      </p>
+      <div className="mt-16 flex flex-col items-center gap-3">
+        <div className="w-8 h-px bg-red" />
+        <p className="text-[0.75rem] font-medium tracking-[0.2em] uppercase text-warm-gray-light">
+          Coming soon to West Loop, Chicago
+        </p>
+      </div>
     </section>
   );
 }
