@@ -30,7 +30,8 @@ export default function About() {
       </p>
       <p className="text-base font-light leading-[1.9] text-charcoal mb-6">
         West Loop felt right. It&apos;s a neighborhood that already gets it.
-        Good food, good design, people who care about craft. 
+        Good food, good design, people who care about craft and quality experiences. 
+        Plus, it&apos;s our home.
       </p>
     </section>
   );
