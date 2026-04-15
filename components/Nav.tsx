@@ -66,6 +66,18 @@ export default function Nav() {
               The Plan
             </Link>
           </li>
+          <li>
+            <Link
+              href="/inspiration"
+              className={`text-[0.8rem] font-normal tracking-[0.1em] uppercase transition-colors duration-300 ${
+                pathname === "/inspiration"
+                  ? "text-red"
+                  : "text-warm-gray hover:text-red"
+              }`}
+            >
+              Inspiration
+            </Link>
+          </li>
         </ul>
 
         {/* Mobile hamburger */}
@@ -117,6 +129,15 @@ export default function Nav() {
             }`}
           >
             The Plan
+          </Link>
+          <Link
+            href="/inspiration"
+            onClick={() => setMenuOpen(false)}
+            className={`font-playfair text-2xl font-normal no-underline transition-colors ${
+              pathname === "/inspiration" ? "text-red" : "text-black hover:text-red"
+            }`}
+          >
+            Inspiration
           </Link>
           <div className="mt-8 w-8 h-px bg-red" />
           <Link
