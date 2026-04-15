@@ -12,10 +12,11 @@ export default function About() {
         more.
       </h2>
       <p className="text-base font-light leading-[1.9] text-charcoal mb-6">
-        Little Menace Hi-Fi started with a simple frustration: there&apos;s
-        nowhere to sit with a great cup of coffee or tea, listen to music on 
+        Little Menace Hi-Fi started with a simple frustration: there are few 
+        places in the world to sit with a cup of coffee or tea, listen to music on 
         a quality sound system, and actually be present in the room with the 
-        people around you.
+        people around you. In a world full of technology & AI, we want to 
+        create spaces for people to connect.
       </p>
       <p className="text-base font-light leading-[1.9] text-charcoal mb-6">
         Not background music. Not a playlist on shuffle. Real sound, through
