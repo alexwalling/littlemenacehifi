@@ -9,8 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        cream: "#F5F0EB",
-        "cream-dark": "#EDE6DD",
+        cream: "#FFFFFF",
+        "cream-dark": "#F5F5F5",
         black: "#1A1A1A",
         red: {
           DEFAULT: "#A93226",
