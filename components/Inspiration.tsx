@@ -91,13 +91,7 @@ export default function Inspiration() {
                 sizes="(max-width: 768px) 100vw, 50vw"
                 unoptimized
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/5 to-transparent" />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-700" />
-              <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-7">
-                <p className="text-white/80 text-[0.65rem] sm:text-[0.7rem] font-medium tracking-[0.25em] uppercase">
-                  {item.caption}
-                </p>
-              </div>
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-all duration-700" />
             </div>
           ))}
         </div>
