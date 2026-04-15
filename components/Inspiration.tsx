@@ -4,6 +4,21 @@ import Image from "next/image";
 
 const inspirations = [
   {
+    src: "https://cdn.mos.cms.futurecdn.net/2K9skTnBYxYdJXTTtECyFG-1920-80.jpg.webp",
+    alt: "Retro-futurist sunken listening lounge with walnut paneling and sculptural ceiling",
+    caption: "The temple",
+  },
+  {
+    src: "https://www.cooperhewitt.org/wp-content/uploads/2025/12/DevonTurnbull_CH_1_WebBanner.jpg",
+    alt: "Monumental horn speakers and tube amplifiers in ornate gilded hall",
+    caption: "Sound as devotion",
+  },
+  {
+    src: "https://i.redd.it/gm387jkrmfgd1.png",
+    alt: "Minimalist hi-fi altar with JBL speakers, reel-to-reel, and vinyl on concrete plinth",
+    caption: "The altar",
+  },
+  {
     src: "https://www.insidehook.com/wp-content/uploads/2023/05/eavesdrop-e1707936765480.jpeg?fit=1200%2C800",
     alt: "Listening lounge with warm lighting, vinyl collection, and slatted wood paneling",
     caption: "Golden hour listening",
@@ -23,31 +38,23 @@ const inspirations = [
     alt: "Walnut-paneled listening room with blue speaker system and vinyl art",
     caption: "Sound as furniture",
   },
-  {
-    src: "https://cdn.mos.cms.futurecdn.net/2K9skTnBYxYdJXTTtECyFG.jpg",
-    alt: "Sculptural sunken listening room with curved walls and towering speakers",
-    caption: "The temple",
-  },
 ];
 
-// Organic layout positions — each image gets unique placement
-const layouts = [
-  // Image 1: Large, top-left hero
-  "col-span-2 row-span-2",
-  // Image 2: Smaller, offset right
-  "col-start-3 row-start-1",
-  // Image 3: Wide, middle band
-  "col-span-2 col-start-2 row-start-3",
-  // Image 4: Smaller, left offset
-  "col-start-1 row-start-3",
-  // Image 5: Full width cinematic
-  "col-span-3 row-start-4",
+// Organic asymmetric grid — each position is hand-placed
+const gridClasses = [
+  "md:col-span-8 md:row-span-2",   // 1: Hero — wide + tall
+  "md:col-span-4 md:row-span-2",   // 2: Tall vertical right
+  "md:col-span-5 md:row-span-1",   // 3: Medium left
+  "md:col-span-7 md:row-span-1",   // 4: Wide right
+  "md:col-span-4 md:row-span-1",   // 5: Compact left
+  "md:col-span-4 md:row-span-1",   // 6: Compact center
+  "md:col-span-4 md:row-span-1",   // 7: Compact right
 ];
 
 export default function Inspiration() {
   return (
     <section className="py-32 px-6 sm:px-8">
-      <div className="max-w-[1200px] mx-auto">
+      <div className="max-w-[1400px] mx-auto">
         <div className="max-w-[800px] mx-auto mb-20">
           <div className="w-12 h-1 bg-red mb-10" />
           <p className="text-[0.7rem] font-medium tracking-[0.25em] uppercase text-red mb-8">
@@ -64,28 +71,24 @@ export default function Inspiration() {
           </p>
         </div>
 
-        {/* Organic scattered gallery */}
-        <div className="space-y-6 md:space-y-0 md:grid md:grid-cols-12 md:gap-5 md:auto-rows-[280px]">
+        <div className="space-y-4 md:space-y-0 md:grid md:grid-cols-12 md:gap-3 md:auto-rows-[300px]">
           {inspirations.map((item, i) => (
             <div
               key={i}
-              className={`group relative overflow-hidden ${getGridClass(i)}`}
+              className={`group relative overflow-hidden ${gridClasses[i] || "md:col-span-4"}`}
             >
               <Image
                 src={item.src}
                 alt={item.alt}
                 fill
-                className="object-cover transition-all duration-700 ease-out group-hover:scale-105"
+                className="object-cover transition-all duration-[1.2s] ease-out group-hover:scale-[1.03]"
                 sizes="(max-width: 768px) 100vw, 50vw"
                 unoptimized
               />
-              {/* Persistent subtle gradient at bottom */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
-              {/* Hover overlay */}
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-500" />
-              {/* Caption — always visible, subtle */}
-              <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6">
-                <p className="text-white/90 text-[0.7rem] sm:text-[0.75rem] font-medium tracking-[0.2em] uppercase drop-shadow-md">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/5 to-transparent" />
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-700" />
+              <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-7">
+                <p className="text-white/80 text-[0.65rem] sm:text-[0.7rem] font-medium tracking-[0.25em] uppercase">
                   {item.caption}
                 </p>
               </div>
@@ -93,29 +96,13 @@ export default function Inspiration() {
           ))}
         </div>
 
-        <div className="mt-20 text-center">
-          <p className="text-[0.8rem] font-light text-warm-gray leading-[1.8] max-w-[500px] mx-auto">
+        <div className="mt-24 text-center">
+          <div className="w-8 h-px bg-red mx-auto mb-6" />
+          <p className="text-[0.8rem] font-light text-warm-gray leading-[1.8] max-w-[500px] mx-auto italic">
             This is a living collection. As we build, our inspiration evolves.
           </p>
         </div>
       </div>
     </section>
   );
-}
-
-// Varied grid placements for organic feel
-function getGridClass(index: number): string {
-  const classes = [
-    // 1: Large hero — spans 7 cols, 2 rows
-    "md:col-span-7 md:row-span-2 rounded-sm",
-    // 2: Tall vertical — 5 cols, 2 rows, offset
-    "md:col-span-5 md:row-span-2 rounded-sm",
-    // 3: Wide cinematic — 5 cols
-    "md:col-span-5 md:row-span-1 rounded-sm",
-    // 4: Square-ish — 4 cols
-    "md:col-span-4 md:row-span-1 rounded-sm",
-    // 5: Remaining — 3 cols
-    "md:col-span-3 md:row-span-1 rounded-sm",
-  ];
-  return classes[index % classes.length];
 }
