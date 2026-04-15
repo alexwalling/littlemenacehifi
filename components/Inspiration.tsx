@@ -1,86 +1,54 @@
+"use client";
+
 import Image from "next/image";
 
 const inspirations = [
-  // Alex's picks
   {
     src: "https://www.insidehook.com/wp-content/uploads/2023/05/eavesdrop-e1707936765480.jpeg?fit=1200%2C800",
     alt: "Listening lounge with warm lighting, vinyl collection, and slatted wood paneling",
     caption: "Golden hour listening",
-    span: "row-span-2",
   },
   {
     src: "https://www.insidehook.com/wp-content/uploads/2024/02/DSC_5634-2.jpg?w=1500",
     alt: "Tube amplifier and reel-to-reel with vinyl and spirits",
     caption: "The analog altar",
-    span: "",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80",
-    alt: "Coffee pour-over in warm light",
-    caption: "Coffee as craft",
-    span: "",
   },
   {
     src: "https://venetosecrets.com/wp-content/uploads/2020/06/Venyer-Sommacampagna-Veneto-Secrets.jpg",
     alt: "Moody cocktail bar with vinyl records, gold speakers, and velvet seating",
     caption: "Records meet cocktails",
-    span: "row-span-2",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1507838153414-b4b713384a76?w=600&q=80",
-    alt: "Hands browsing through vinyl records",
-    caption: "The dig",
-    span: "",
   },
   {
     src: "https://preview.redd.it/home-listening-room-build-v0-rlsphm23e2bc1.jpeg?width=1080&crop=smart&auto=webp&s=7a992a9610e6cf368f81bbdaa6c125c751b9e581",
     alt: "Walnut-paneled listening room with blue speaker system and vinyl art",
     caption: "Sound as furniture",
-    span: "",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1558584673-c834fb1cc3b1?w=800&q=80",
-    alt: "Vinyl record on turntable",
-    caption: "The ritual",
-    span: "",
   },
   {
     src: "https://cdn.mos.cms.futurecdn.net/2K9skTnBYxYdJXTTtECyFG.jpg",
     alt: "Sculptural sunken listening room with curved walls and towering speakers",
     caption: "The temple",
-    span: "row-span-2",
   },
-  {
-    src: "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=600&q=80",
-    alt: "Warm ambient bar interior",
-    caption: "Warm materials, warm light",
-    span: "",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800&q=80",
-    alt: "Minimalist cafe interior",
-    caption: "Intentional space",
-    span: "",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&q=80",
-    alt: "Jazz musician performing in intimate setting",
-    caption: "Intimate sessions",
-    span: "",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=800&q=80",
-    alt: "DJ mixing records",
-    caption: "Curated sets",
-    span: "",
-  },
+];
+
+// Organic layout positions — each image gets unique placement
+const layouts = [
+  // Image 1: Large, top-left hero
+  "col-span-2 row-span-2",
+  // Image 2: Smaller, offset right
+  "col-start-3 row-start-1",
+  // Image 3: Wide, middle band
+  "col-span-2 col-start-2 row-start-3",
+  // Image 4: Smaller, left offset
+  "col-start-1 row-start-3",
+  // Image 5: Full width cinematic
+  "col-span-3 row-start-4",
 ];
 
 export default function Inspiration() {
   return (
     <section className="py-32 px-6 sm:px-8">
       <div className="max-w-[1200px] mx-auto">
-        <div className="max-w-[800px] mx-auto mb-16">
+        <div className="max-w-[800px] mx-auto mb-20">
           <div className="w-12 h-1 bg-red mb-10" />
           <p className="text-[0.7rem] font-medium tracking-[0.25em] uppercase text-red mb-8">
             Inspiration
@@ -96,22 +64,28 @@ export default function Inspiration() {
           </p>
         </div>
 
-        <div className="columns-2 md:columns-3 gap-4 space-y-4">
+        {/* Organic scattered gallery */}
+        <div className="space-y-6 md:space-y-0 md:grid md:grid-cols-12 md:gap-5 md:auto-rows-[280px]">
           {inspirations.map((item, i) => (
             <div
               key={i}
-              className="break-inside-avoid group relative overflow-hidden cursor-pointer"
+              className={`group relative overflow-hidden ${getGridClass(i)}`}
             >
               <Image
                 src={item.src}
                 alt={item.alt}
-                width={600}
-                height={item.span ? 800 : 400}
-                className="w-full h-auto object-cover transition-all duration-500 group-hover:scale-[1.03]"
+                fill
+                className="object-cover transition-all duration-700 ease-out group-hover:scale-105"
+                sizes="(max-width: 768px) 100vw, 50vw"
                 unoptimized
               />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-500 flex items-end">
-                <p className="p-5 text-cream text-[0.8rem] font-medium tracking-[0.15em] uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-500 translate-y-2 group-hover:translate-y-0">
+              {/* Persistent subtle gradient at bottom */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+              {/* Hover overlay */}
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-500" />
+              {/* Caption — always visible, subtle */}
+              <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6">
+                <p className="text-white/90 text-[0.7rem] sm:text-[0.75rem] font-medium tracking-[0.2em] uppercase drop-shadow-md">
                   {item.caption}
                 </p>
               </div>
@@ -122,10 +96,26 @@ export default function Inspiration() {
         <div className="mt-20 text-center">
           <p className="text-[0.8rem] font-light text-warm-gray leading-[1.8] max-w-[500px] mx-auto">
             This is a living collection. As we build, our inspiration evolves.
-            If you see something that belongs here, we want to hear about it.
           </p>
         </div>
       </div>
     </section>
   );
+}
+
+// Varied grid placements for organic feel
+function getGridClass(index: number): string {
+  const classes = [
+    // 1: Large hero — spans 7 cols, 2 rows
+    "md:col-span-7 md:row-span-2 rounded-sm",
+    // 2: Tall vertical — 5 cols, 2 rows, offset
+    "md:col-span-5 md:row-span-2 rounded-sm",
+    // 3: Wide cinematic — 5 cols
+    "md:col-span-5 md:row-span-1 rounded-sm",
+    // 4: Square-ish — 4 cols
+    "md:col-span-4 md:row-span-1 rounded-sm",
+    // 5: Remaining — 3 cols
+    "md:col-span-3 md:row-span-1 rounded-sm",
+  ];
+  return classes[index % classes.length];
 }
