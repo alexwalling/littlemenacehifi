@@ -11,7 +11,7 @@ const rules = [
   },
   {
     number: "3",
-    title: "Everyone's a friend.",
+    title: "Everyone is a friend.",
     body: "The person next to you might be a teacher, a chef, a DJ, or someone who just wandered in. Doesn't matter. If you're at Little Menace, you're one of us. Please feel free to introduce yourself.",
   },
   {
