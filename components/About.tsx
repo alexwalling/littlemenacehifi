@@ -19,9 +19,9 @@ export default function About() {
         create spaces for people to connect.
       </p>
       <p className="text-base font-light leading-[1.9] text-charcoal mb-6">
-        Not background music. Not a playlist on shuffle. Real sound, through
-        quality speakers, chosen with intention. A place where you walk in, put
-        your phone away, and let the music do what it was made to do.
+        This is a space full of music chosen with intention on. Not a playlist on 
+        shuffle. A place where you walk in, put your phone away, and let the 
+        music do what it was made to do.
       </p>
       <p className="text-base font-light leading-[1.9] text-charcoal mb-6">
         We&apos;re not a club. We&apos;re not exclusive. We&apos;re just
