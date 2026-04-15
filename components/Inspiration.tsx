@@ -62,8 +62,8 @@ const inspirations = [
 
 // Organic asymmetric grid — each position is hand-placed
 const gridClasses = [
-  "md:col-span-8 md:row-span-2",   // 1: Hero wide+tall
-  "md:col-span-4 md:row-span-2",   // 2: Tall right
+  "md:col-span-6 md:row-span-2",   // 1: Hero wide+tall
+  "md:col-span-6 md:row-span-2",   // 2: Tall right
   "md:col-span-5 md:row-span-1",   // 3: Medium
   "md:col-span-7 md:row-span-1",   // 4: Wide
   "md:col-span-4 md:row-span-1",   // 5: Compact
