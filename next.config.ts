@@ -10,6 +10,7 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "i.redd.it" },
       { protocol: "https", hostname: "cdn.mos.cms.futurecdn.net" },
       { protocol: "https", hostname: "www.cooperhewitt.org" },
+      { protocol: "https", hostname: "static.dezeen.com" },
     ],
   },
 };

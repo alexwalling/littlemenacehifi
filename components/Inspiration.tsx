@@ -38,6 +38,11 @@ const inspirations = [
     alt: "Walnut-paneled listening room with blue speaker system and vinyl art",
     caption: "Sound as furniture",
   },
+  {
+    src: "https://static.dezeen.com/uploads/2025/02/silence-please-cafe-new-york-city_dezeen_2364_col_8-1704x2556.jpg",
+    alt: "Industrial listening room with horn speakers, Togo sofas, and exposed brick",
+    caption: "Silence please",
+  },
 ];
 
 // Organic asymmetric grid — each position is hand-placed
@@ -48,7 +53,8 @@ const gridClasses = [
   "md:col-span-7 md:row-span-1",   // 4: Wide right
   "md:col-span-4 md:row-span-1",   // 5: Compact left
   "md:col-span-4 md:row-span-1",   // 6: Compact center
-  "md:col-span-4 md:row-span-1",   // 7: Compact right
+  "md:col-span-4 md:row-span-2",   // 7: Tall — walnut room
+  "md:col-span-8 md:row-span-2",   // 8: Wide tall — Silence Please
 ];
 
 export default function Inspiration() {
