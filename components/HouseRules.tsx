@@ -2,7 +2,7 @@ const rules = [
   {
     number: "1",
     title: "Be present.",
-    body: "Put your phone down. You can snap a photo, grab a quick message, whatever. But if you're sat on your phone scrolling, you're missing the point. The music and community is better than your feed. We promise.",
+    body: "Put your phone away. You can snap a photo of the space, reply to a quick message, whatever. But if you're sat on your phone scrolling, you're missing the point. The music and community are better than your feed. We promise.",
   },
   {
     number: "2",
