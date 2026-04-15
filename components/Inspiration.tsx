@@ -41,20 +41,38 @@ const inspirations = [
   {
     src: "https://static.dezeen.com/uploads/2025/02/silence-please-cafe-new-york-city_dezeen_2364_col_8-1704x2556.jpg",
     alt: "Industrial listening room with horn speakers, Togo sofas, and exposed brick",
-    caption: "Silence please",
+    caption: "",
+  },
+  {
+    src: "https://media.timeout.com/images/106002072/1920/1080/image.webp",
+    alt: "Intimate bar or listening room interior",
+    caption: "",
+  },
+  {
+    src: "https://i0.wp.com/www.cityandsee.com/wp-content/uploads/2017/09/1A2F9D92-1AC6-4EF5-A828-84099CEA8D86.jpg?w=1334&ssl=1",
+    alt: "Japanese kissaten or listening bar interior",
+    caption: "",
+  },
+  {
+    src: "https://i0.wp.com/www.cityandsee.com/wp-content/uploads/2018/01/IMG_4335.jpg?w=2160&ssl=1",
+    alt: "Japanese kissaten or listening bar interior",
+    caption: "",
   },
 ];
 
 // Organic asymmetric grid — each position is hand-placed
 const gridClasses = [
-  "md:col-span-8 md:row-span-2",   // 1: Hero — wide + tall
-  "md:col-span-4 md:row-span-2",   // 2: Tall vertical right
-  "md:col-span-5 md:row-span-1",   // 3: Medium left
-  "md:col-span-7 md:row-span-1",   // 4: Wide right
-  "md:col-span-4 md:row-span-1",   // 5: Compact left
-  "md:col-span-4 md:row-span-1",   // 6: Compact center
-  "md:col-span-4 md:row-span-2",   // 7: Tall — walnut room
-  "md:col-span-8 md:row-span-2",   // 8: Wide tall — Silence Please
+  "md:col-span-8 md:row-span-2",   // 1: Hero wide+tall
+  "md:col-span-4 md:row-span-2",   // 2: Tall right
+  "md:col-span-5 md:row-span-1",   // 3: Medium
+  "md:col-span-7 md:row-span-1",   // 4: Wide
+  "md:col-span-4 md:row-span-1",   // 5: Compact
+  "md:col-span-4 md:row-span-1",   // 6: Compact
+  "md:col-span-4 md:row-span-2",   // 7: Tall
+  "md:col-span-4 md:row-span-2",   // 8: Tall
+  "md:col-span-4 md:row-span-1",   // 9: Compact
+  "md:col-span-5 md:row-span-1",   // 10: Medium
+  "md:col-span-7 md:row-span-1",   // 11: Wide
 ];
 
 export default function Inspiration() {

@@ -11,6 +11,8 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "cdn.mos.cms.futurecdn.net" },
       { protocol: "https", hostname: "www.cooperhewitt.org" },
       { protocol: "https", hostname: "static.dezeen.com" },
+      { protocol: "https", hostname: "media.timeout.com" },
+      { protocol: "https", hostname: "i0.wp.com" },
     ],
   },
 };
