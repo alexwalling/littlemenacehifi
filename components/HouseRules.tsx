@@ -41,7 +41,7 @@ export default function HouseRules() {
         How we do things around here.
       </h2>
       <p className="text-base font-light leading-[1.9] text-charcoal mb-0">
-        These aren&apos;t rules to be difficult. They exist because the best
+        These aren&apos;t rules to be difficult... They exist because the best
         rooms have a shared understanding. This is ours.
       </p>
 
